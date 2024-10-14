@@ -1,0 +1,51 @@
+CREATE TABLE Pet(
+	PetID int PRIMARY KEY,
+	Name varchar(25),
+	Descript varchar(100)    
+);
+INSERT INTO Pet(PetID, Name, Descript) VALUES(1, 'Rover', 'Fun dog');
+INSERT INTO Pet(PetID, Name, Descript) VALUES(2, 'Bailey', 'Lazy dog');
+INSERT INTO Pet(PetID, Name, Descript) VALUES(3, 'Pistachio', 'Green dog');
+INSERT INTO Pet(PetID, Name, Descript) VALUES(4, 'Oreo', 'Black and White Dog');
+INSERT INTO Pet(PetID, Name, Descript) VALUES(5, 'Chocolate', 'Brown Dog');
+
+SELECT * FROM `Pet`;
+SELECT * FROM `Pet` WHERE `PetID` BETWEEN 1 AND 3;
+
+UPDATE Pet SET Name='Apple', Descript='Green Dog' WHERE PetID=3;
+
+DELETE FROM `Pet` WHERE `PetID` = 3;
+
+
+
+INSERT INTO UserPreA5(login, pass, name) VALUES ('satitka', '12345', 'shruti');
+INSERT INTO UserPreA5(login, pass, name) VALUES ('user2log', '54321', 'user2');
+INSERT INTO UserPreA5(login, pass, name) VALUES ('user3log', '32541', 'user3');
+
+INSERT INTO AccountPreA5(account, login, descript) VALUES (1, 'satitka', 'satitka is admin');
+INSERT INTO AccountPreA5(account, login, descript) VALUES (6, 'satitka', 'satitka programmer');
+INSERT INTO AccountPreA5(account, login, descript) VALUES (3, 'user2log', 'user2log is manager');
+INSERT INTO AccountPreA5(account, login, descript) VALUES (2, 'user2log', 'user2log is team leader');
+INSERT INTO AccountPreA5(account, login, descript) VALUES (4, 'user3log', 'user3log is moderator');
+INSERT INTO AccountPreA5(account, login, descript) VALUES (4, 'user3log', 'user3log is moderator');
+
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('python', 'satitka', 3);
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('javascript', 'satitka', 3);
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('HTML', 'satitka', 4);
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('java', 'user2log', 3);
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('ruby', 'user2log', 2);
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('kotlin', 'user2log', 4);
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('C#', 'user3log', 3);
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('Assembly', 'user3log', 2);
+INSERT INTO LanguagePreA5(language, login, proficiency) VALUES ('SQL', 'user3log', 4);
+
+UPDATE AccountPreA5 SET account = 6, descript = 'user3log is admin' WHERE login = 'user3log' AND account = 4;
+UPDATE LanguagePreA5 SET language = 'CSS', proficiency = 4 WHERE login = 'satitka' AND language = 'python';
+
+DELETE FROM LanguagePreA5 WHERE login='satitka' AND language = 'HTML';
+DELETE FROM LanguagePreA5 WHERE login='user2log' AND language = 'java';
+DELETE FROM LanguagePreA5 WHERE login='user3log' AND language = 'SQL';
+
+SELECT * FROM LanguagePreA5 WHERE login='satitka';
+SELECT * FROM LanguagePreA5 WHERE login='user2log';
+SELECT * FROM LanguagePreA5 WHERE login='user3log';
