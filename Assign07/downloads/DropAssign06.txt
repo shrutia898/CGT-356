@@ -1,0 +1,2 @@
+DROP TABLE Assign06Projects;
+DROP TABLE Assign06Cars;

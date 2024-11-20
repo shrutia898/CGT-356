@@ -1,0 +1,40 @@
+CREATE TABLE Assign06Projects(
+	ProjectID int PRIMARY KEY,
+	ProjName varchar(50),
+	ProjCategory varchar(50),
+	ProjDesc varchar(200),
+	StartDate varchar(30),
+	EndDate varchar(30)
+);
+
+CREATE TABLE Assign06Cars(
+	CarID int PRIMARY KEY,
+	CarMake varchar(50),
+	CarModel varchar(50),
+	CarYear int,
+	CarColor varchar(500),
+	CarHybrid varchar(10)
+);
+
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (1, 'Apartments', 'Commercial',   'Apartment remodel', 'Jan 01', 'Dec 13');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (2, 'Town Homes', 'Commercial',   'Replace steps', 'Jul 15', 'Oct 31');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (3, 'Myers', 'Residential',       'Pour concrete patio', 'Feb 07', 'Mar 31');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (4, 'Richardson', 'Residential',  'New sunroom addition', 'Jan 21', 'Sep 01');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (5, 'Condominiums', 'Commercial', 'Replace windows', 'Mar 12', 'Oct 10');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (6, 'Brady', 'Residential',       'Install hot tub', 'Apr 15', 'May 30');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (7, 'Nursing Home', 'Commercial', 'New hallway floors', 'Jun 01', 'Sep 27');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (8, 'Rogers', 'Residential',      'Swimming pool and deck', 'Feb 02', 'Nov 17');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (9, 'Jackson', 'Residential',     'Garage addition', 'Mar 15', 'Dec 19');
+INSERT INTO Assign06Projects(ProjectID, ProjName, ProjCategory, ProjDesc, StartDate, EndDate) VALUES (10, 'Dormitories', 'Commercial', 'Tuck point brick', 'Jul 01', 'Aug 30');
+
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(1, 'Ford',        'Mustang',           1976, 'Red',      'No');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(2, 'Chevrolet',   'Corvette',          1967, 'Silver',   'No');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(3, 'Jaguar',      'E-type',            1976, 'Sky Blue', 'No');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(4, 'Ford',        'Mustang Shelby GT', 1967, 'Silver',   'No');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(5, 'Chevrolet',   'Corvette',          1966, 'Red',      'No');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(6, 'Lamborghini', 'Miura',             1966, 'Green',    'No');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(7, 'Porsche',     '911',               1974, 'White',    'No');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(8, 'Honda',       'CR-Z',              2020, 'Black',    'Yes');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(9, 'Toyota',      'Prius',             2017, 'Blue',     'Yes');
+INSERT INTO Assign06Cars(CarID, CarMake, CarModel, CarYear, CarColor, CarHybrid) VALUES(10, 'Kia',        'Optima',            2018, 'Navy',     'Yes');
+
